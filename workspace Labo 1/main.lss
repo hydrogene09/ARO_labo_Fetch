@@ -17,7 +17,7 @@ Disassembly of section .text:
 00000000 <.text>:
    0:	2105      	movs	r1, #5
    2:	18d0      	adds	r0, r2, r3
-   4:	18c0      	adds	r0, r0, r3
-   6:	18c0      	adds	r0, r0, r3
-   8:	18c0      	adds	r0, r0, r3
-   a:	18c0      	adds	r0, r0, r3
+   4:	1c43      	adds	r3, r0, #1
+   6:	1c85      	adds	r5, r0, #2
+   8:	1cc6      	adds	r6, r0, #3
+   a:	1d07      	adds	r7, r0, #4
