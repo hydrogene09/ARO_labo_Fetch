@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project integrity="dc24c116a5bbdb6eae7dde5c586e0cc34e8db9eb" source="2.16.8.t" version="1.0">
+<project integrity="350a0a8506710139289faca30725fc5833cd4d82" source="2.16.8.t" version="1.0">
   This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="north"/>
+      <a name="facing" val="west"/>
       <a name="owner" val="autogen:prodis"/>
       <a name="date" val="29.04.14 11:40:05"/>
       <a name="version" val="2.10.6.1"/>
@@ -204,6 +204,7 @@ end TCL_Generic;
     <wire from="(910,830)" to="(1090,830)"/>
     <wire from="(490,770)" to="(590,770)"/>
     <wire from="(490,730)" to="(590,730)"/>
+    <wire from="(590,790)" to="(590,810)"/>
     <wire from="(170,750)" to="(590,750)"/>
     <wire from="(170,910)" to="(200,910)"/>
     <wire from="(170,880)" to="(200,880)"/>
@@ -225,6 +226,7 @@ end TCL_Generic;
     <wire from="(1370,810)" to="(1390,810)"/>
     <wire from="(1370,750)" to="(1390,750)"/>
     <wire from="(1370,830)" to="(1390,830)"/>
+    <wire from="(460,810)" to="(590,810)"/>
     <wire from="(1500,150)" to="(1520,150)"/>
     <wire from="(1500,440)" to="(1520,440)"/>
     <wire from="(1070,870)" to="(1090,870)"/>
@@ -410,6 +412,14 @@ end TCL_Generic;
       <a name="facing" val="east"/>
       <a name="width" val="16"/>
       <a name="label" val="instr_addr_i"/>
+    </comp>
+    <comp lib="5" loc="(460,810)" name="Button">
+      <a name="label" val="SAUT"/>
+      <a name="owner" val="mim"/>
+      <a name="date" val="16.01.20 11:23:53"/>
+      <a name="version" val="2.14.7.t"/>
+      <a name="uuid" val="a8b615d3-aefd-4132-9e29-ba1c8b6ebddb"/>
+      <a name="integrity" val="97cb9acd842c2509b983155a8f22bb0b63713137"/>
     </comp>
     <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
       <a name="text" val="Attention, votre version de Logisim"/>
@@ -931,22 +941,29 @@ end TCL_Generic;
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
     <wire from="(880,340)" to="(1000,340)"/>
+    <wire from="(520,600)" to="(570,600)"/>
+    <wire from="(650,660)" to="(710,660)"/>
     <wire from="(910,90)" to="(950,90)"/>
     <wire from="(910,50)" to="(950,50)"/>
     <wire from="(910,130)" to="(950,130)"/>
     <wire from="(910,110)" to="(950,110)"/>
     <wire from="(910,70)" to="(950,70)"/>
     <wire from="(910,150)" to="(950,150)"/>
+    <wire from="(570,600)" to="(570,630)"/>
     <wire from="(1010,540)" to="(1050,540)"/>
     <wire from="(850,400)" to="(850,420)"/>
+    <wire from="(500,620)" to="(500,650)"/>
     <wire from="(1010,520)" to="(1120,520)"/>
     <wire from="(200,180)" to="(230,180)"/>
     <wire from="(200,120)" to="(230,120)"/>
     <wire from="(200,250)" to="(230,250)"/>
     <wire from="(200,290)" to="(230,290)"/>
+    <wire from="(340,610)" to="(500,610)"/>
     <wire from="(680,540)" to="(710,540)"/>
+    <wire from="(480,650)" to="(500,650)"/>
     <wire from="(790,380)" to="(820,380)"/>
     <wire from="(1010,560)" to="(1170,560)"/>
+    <wire from="(440,580)" to="(710,580)"/>
     <wire from="(1780,60)" to="(1800,60)"/>
     <wire from="(1780,170)" to="(1800,170)"/>
     <wire from="(1780,250)" to="(1800,250)"/>
@@ -957,6 +974,8 @@ end TCL_Generic;
     <wire from="(580,560)" to="(710,560)"/>
     <wire from="(810,340)" to="(820,340)"/>
     <wire from="(810,360)" to="(820,360)"/>
+    <wire from="(700,640)" to="(710,640)"/>
+    <wire from="(570,600)" to="(710,600)"/>
     <comp lib="0" loc="(200,120)" name="Pin">
       <a name="width" val="16"/>
       <a name="label" val="instr_data_i"/>
@@ -1242,6 +1261,52 @@ end TCL_Generic;
       <a name="label" val="clk_s"/>
     </comp>
     <comp lib="0" loc="(810,360)" name="Constant"/>
+    <comp lib="0" loc="(520,600)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="incoming" val="7"/>
+      <a name="owner" val="yuuta_jorand"/>
+      <a name="date" val="13.03.24 15:18:57"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="decdc4a2-b36a-4e04-ae65-028d4e79c45d"/>
+      <a name="integrity" val="ee6d2a3c7896e0ff401f47d55ec7fc0878305978"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="1"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+    </comp>
+    <comp lib="0" loc="(440,580)" name="Constant">
+      <a name="width" val="16"/>
+      <a name="value" val="0x8"/>
+    </comp>
+    <comp lib="0" loc="(700,640)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk_s"/>
+    </comp>
+    <comp lib="0" loc="(650,660)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="rst_s"/>
+    </comp>
+    <comp lib="0" loc="(570,630)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="owner" val="yuuta_jorand"/>
+      <a name="date" val="13.03.24 15:35:35"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="7cc945bb-3ea2-4d1c-a332-72fba141f386"/>
+      <a name="integrity" val="3639a180aa31ce7d028731ac013daa2e149d874b"/>
+    </comp>
+    <comp lib="0" loc="(480,650)" name="Constant">
+      <a name="width" val="6"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(340,610)" name="Pin">
+      <a name="label" val="saut_test"/>
+      <a name="owner" val="yuuta_jorand"/>
+      <a name="date" val="13.03.24 15:43:34"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="b1cb6d7a-ffb8-4e99-a1bf-1dcfbca46f48"/>
+      <a name="integrity" val="eaf419019c00cdf4e0fed87dfd5127a8103043a4"/>
+    </comp>
     <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
       <a name="text" val="Attention, votre version de Logisim"/>
       <a name="font" val="SansSerif plain 48"/>
@@ -1275,13 +1340,13 @@ end TCL_Generic;
     <a name="clabelfont" val="SansSerif bold 12"/>
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
-    <wire from="(740,500)" to="(740,510)"/>
-    <wire from="(610,340)" to="(610,350)"/>
-    <wire from="(670,360)" to="(720,360)"/>
-    <wire from="(590,370)" to="(630,370)"/>
-    <wire from="(730,390)" to="(730,480)"/>
-    <wire from="(610,310)" to="(610,340)"/>
-    <wire from="(750,370)" to="(850,370)"/>
+    <wire from="(740,520)" to="(740,530)"/>
+    <wire from="(880,460)" to="(880,470)"/>
+    <wire from="(820,460)" to="(880,460)"/>
+    <wire from="(730,390)" to="(730,460)"/>
+    <wire from="(860,490)" to="(900,490)"/>
+    <wire from="(940,480)" to="(980,480)"/>
+    <wire from="(820,370)" to="(820,460)"/>
     <wire from="(200,240)" to="(230,240)"/>
     <wire from="(200,120)" to="(230,120)"/>
     <wire from="(200,160)" to="(230,160)"/>
@@ -1289,18 +1354,21 @@ end TCL_Generic;
     <wire from="(200,280)" to="(230,280)"/>
     <wire from="(200,320)" to="(230,320)"/>
     <wire from="(200,360)" to="(230,360)"/>
+    <wire from="(880,470)" to="(900,470)"/>
     <wire from="(200,80)" to="(230,80)"/>
-    <wire from="(610,350)" to="(630,350)"/>
-    <wire from="(610,310)" to="(630,310)"/>
+    <wire from="(730,460)" to="(730,500)"/>
     <wire from="(700,380)" to="(720,380)"/>
     <wire from="(700,190)" to="(730,190)"/>
+    <wire from="(690,360)" to="(720,360)"/>
+    <wire from="(730,460)" to="(760,460)"/>
+    <wire from="(750,370)" to="(820,370)"/>
+    <wire from="(820,370)" to="(890,370)"/>
     <wire from="(1320,80)" to="(1340,80)"/>
     <wire from="(1320,160)" to="(1340,160)"/>
     <wire from="(1320,200)" to="(1340,200)"/>
     <wire from="(1320,120)" to="(1340,120)"/>
     <wire from="(700,380)" to="(700,430)"/>
     <wire from="(690,430)" to="(700,430)"/>
-    <wire from="(600,340)" to="(610,340)"/>
     <comp lib="0" loc="(230,200)" name="Tunnel">
       <a name="width" val="16"/>
       <a name="label" val="branch_addr_s"/>
@@ -1485,35 +1553,10 @@ end TCL_Generic;
     <comp lib="0" loc="(700,190)" name="Constant">
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="3" loc="(670,360)" name="Adder">
-      <a name="width" val="16"/>
-      <a name="owner" val="yuuta_jorand"/>
-      <a name="date" val="06.03.24 15:28:18"/>
-      <a name="version" val="2.16.8.t"/>
-      <a name="uuid" val="c1aeb9a9-fbc8-40c7-8e5c-368348a26178"/>
-      <a name="integrity" val="82c70d4e60e01c4ebe8377aaae5e7ff939365f8f"/>
-    </comp>
-    <comp lib="0" loc="(590,370)" name="Constant">
-      <a name="width" val="16"/>
-      <a name="value" val="0x2"/>
-    </comp>
-    <comp lib="0" loc="(600,340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="16"/>
-      <a name="label" val="PC_pres_s"/>
-    </comp>
-    <comp lib="0" loc="(630,310)" name="Tunnel">
-      <a name="width" val="16"/>
-      <a name="label" val="instr_addr_s"/>
-    </comp>
     <comp lib="0" loc="(690,430)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="16"/>
       <a name="label" val="branch_addr_s"/>
-    </comp>
-    <comp lib="0" loc="(850,370)" name="Tunnel">
-      <a name="width" val="16"/>
-      <a name="label" val="PC_fut_s"/>
     </comp>
     <comp lib="2" loc="(750,370)" name="Multiplexer">
       <a name="width" val="16"/>
@@ -1524,12 +1567,12 @@ end TCL_Generic;
       <a name="uuid" val="758d5057-0259-4977-b9fc-71335a45bd20"/>
       <a name="integrity" val="bdc81acc299167e5ca18f056201f3aeb9196d88a"/>
     </comp>
-    <comp lib="0" loc="(740,510)" name="Tunnel">
+    <comp lib="0" loc="(740,530)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="width" val="7"/>
       <a name="label" val="fetch_control_bus_s"/>
     </comp>
-    <comp lib="0" loc="(740,500)" name="Splitter">
+    <comp lib="0" loc="(740,520)" name="Splitter">
       <a name="facing" val="north"/>
       <a name="incoming" val="7"/>
       <a name="owner" val="yuuta_jorand"/>
@@ -1542,6 +1585,39 @@ end TCL_Generic;
       <a name="bit4" val="1"/>
       <a name="bit5" val="1"/>
       <a name="bit6" val="1"/>
+    </comp>
+    <comp lib="0" loc="(860,490)" name="Constant">
+      <a name="width" val="16"/>
+      <a name="value" val="0x2"/>
+    </comp>
+    <comp lib="3" loc="(940,480)" name="Adder">
+      <a name="width" val="16"/>
+      <a name="owner" val="yuuta_jorand"/>
+      <a name="date" val="06.03.24 15:28:18"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="c1aeb9a9-fbc8-40c7-8e5c-368348a26178"/>
+      <a name="integrity" val="82c70d4e60e01c4ebe8377aaae5e7ff939365f8f"/>
+    </comp>
+    <comp lib="0" loc="(980,480)" name="Tunnel">
+      <a name="width" val="16"/>
+      <a name="label" val="PC_fut_s"/>
+    </comp>
+    <comp lib="0" loc="(890,370)" name="Tunnel">
+      <a name="width" val="16"/>
+      <a name="label" val="instr_addr_s"/>
+    </comp>
+    <comp lib="0" loc="(760,460)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="owner" val="yuuta_jorand"/>
+      <a name="date" val="13.03.24 15:37:48"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="2f1399ec-b0bd-41a4-ab7a-0a3c47ecf1b3"/>
+      <a name="integrity" val="b5ae8460ce2cfae1fa7976d0abd295ffd5b93c9a"/>
+    </comp>
+    <comp lib="0" loc="(690,360)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="16"/>
+      <a name="label" val="PC_pres_s"/>
     </comp>
     <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
       <a name="text" val="Attention, votre version de Logisim"/>
